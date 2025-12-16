@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Your ScoreWise Account - Data Deletion Request</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin: 40px 0;
+        }
+        
+        .header {
+            background: linear-gradient(to right, #1a2980, #26d0ce);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            color: #1a2980;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .section-title i {
+            color: #26d0ce;
+        }
+        
+        .steps {
+            counter-reset: step-counter;
+            margin-left: 10px;
+        }
+        
+        .step {
+            position: relative;
+            margin-bottom: 25px;
+            padding-left: 50px;
+        }
+        
+        .step:before {
+            counter-increment: step-counter;
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 36px;
+            height: 36px;
+            background: #1a2980;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .step h3 {
+            color: #1a2980;
+            margin-bottom: 8px;
+        }
+        
+        .highlight {
+            background-color: #f0f8ff;
+            border-left: 4px solid #26d0ce;
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .data-list {
+            list-style-type: none;
+        }
+        
+        .data-list li {
+            margin-bottom: 12px;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .data-list li:before {
+            content: "•";
+            color: #26d0ce;
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0;
+            top: -5px;
+        }
+        
+        .note-box {
+            background-color: #fff9e6;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
+            margin-top: 25px;
+        }
+        
+        .contact-info {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .contact-info a {
+            color: #1a2980;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 25px;
+            background: #f8f9fa;
+            color: #666;
+            font-size: 0.9rem;
+            border-top: 1px solid #eee;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                border-radius: 15px;
+                margin: 20px 0;
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .content {
+                padding: 25px;
+            }
+            
+            .step {
+                padding-left: 45px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            
+            .header h1 {
+                font-size: 1.7rem;
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .step:before {
+                width: 32px;
+                height: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+                <i class="fas fa-user-slash"></i>
+                Delete Your ScoreWise Account & Data
+            </h1>
+            <p>Follow the instructions below to permanently delete your account and associated personal data from ScoreWise.</p>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2 class="section-title"><i class="fas fa-list-ol"></i> How to Request Account Deletion</h2>
+                <div class="steps">
+                    <div class="step">
+                        <h3>Open the Contact Support Section</h3>
+                        <p>Navigate to the <strong>"Contact Support"</strong> section within the ScoreWise app. You can find this in the main menu dropdown.</p>
+                    </div>
+                    
+                    <div class="step">
+                        <h3>Select Account Deletion</h3>
+                        <p>In the subject field, choose the <strong>"Account Deletion"</strong> option from the dropdown menu.</p>
+                    </div>
+                    
+                    <div class="step">
+                        <h3>Enter Your Email Address</h3>
+                        <p>Provide the <strong>email address</strong> associated with your ScoreWise account to help us verify your identity.</p>
+                    </div>
+                    
+                    <div class="step">
+                        <h3>Send Your Request</h3>
+                        <p>Submit your request. No additional message is required—we'll process it based on the email address you provide.</p>
+                    </div>
+                </div>
+                
+                <div class="highlight">
+                    <p><i class="fas fa-lightbulb"></i> <strong>Tip:</strong> Make sure you're using the email address linked to your ScoreWise account to ensure we can locate and delete the correct data.</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title"><i class="fas fa-clock"></i> What Happens After You Submit</h2>
+                
+                <div class="step">
+                    <h3>Verification & Processing</h3>
+                    <p>We will verify your request and begin processing it within <strong>24 hours</strong> of submission.</p>
+                </div>
+                
+                <div class="step">
+                    <h3>Data Deletion</h3>
+                    <p>Upon verification, we will permanently delete the following personal data associated with your account:</p>
+                    <ul class="data-list">
+                        <li>Your account profile and preferences</li>
+                        <li>Your registered email address</li>
+                        <li>Your subscription and payment history</li>
+                        <li>All saved personal data and app activity</li>
+                    </ul>
+                </div>
+                
+                <div class="step">
+                    <h3>Data Retention Notice</h3>
+                    <p>Please note that we may retain certain <strong>anonymous, aggregated data</strong> for analytical purposes as permitted by law. This data cannot be traced back to you personally.</p>
+                </div>
+            </div>
+            
+            <div class="note-box">
+                <h3><i class="fas fa-exclamation-circle"></i> Important Information</h3>
+                <p>Account deletion is <strong>permanent and irreversible</strong>. Once your data is deleted, you will lose access to all ScoreWise features and your account cannot be restored.</p>
+                <p>If you have an active subscription, please cancel it through the Google Play Store before requesting account deletion.</p>
+            </div>
+            
+            <div class="contact-info">
+                <h3><i class="fas fa-life-ring"></i> Need Help?</h3>
+                <p>If you encounter any issues or have questions about the account deletion process, please contact us directly at:</p>
+                <p><a href="mailto:privacy@yourdomain.com"><i class="fas fa-envelope"></i> privacy@yourdomain.com</a></p>
+                <p style="margin-top: 15px; font-size: 0.9rem;">Please replace "yourdomain.com" with your actual domain before publishing this page.</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>ScoreWise Account Deletion Portal | This page meets Google Play data deletion requirements</p>
+            <p style="margin-top: 5px; font-size: 0.8rem;">© 2024 ScoreWise. All rights reserved.</p>
+        </div>
+    </div>
+    
+    <script>
+        // Simple script to highlight steps on click for better UX
+        document.addEventListener('DOMContentLoaded', function() {
+            const steps = document.querySelectorAll('.step');
+            steps.forEach(step => {
+                step.addEventListener('click', function() {
+                    steps.forEach(s => s.style.backgroundColor = 'transparent');
+                    this.style.backgroundColor = '#f0f8ff';
+                    this.style.borderRadius = '8px';
+                    this.style.padding = '15px 15px 15px 50px';
+                    this.style.transition = 'background-color 0.3s';
+                });
+            });
+            
+            // Add a visual indicator that the page is for Google Play compliance
+            const header = document.querySelector('.header h1');
+            header.insertAdjacentHTML('beforeend', '<span style="font-size: 0.7rem; background: white; color: #1a2980; padding: 3px 10px; border-radius: 20px; margin-left: 10px; vertical-align: middle;">Google Play Compliant</span>');
+        });
+    </script>
+</body>
+</html>
